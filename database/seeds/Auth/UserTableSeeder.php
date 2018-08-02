@@ -27,7 +27,6 @@ class UserTableSeeder extends Seeder
             'password'          => 'secret',
             'confirmation_code' => md5(uniqid(mt_rand(), true)),
             'confirmed'         => true,
-            'ac_number'         => Str::random(8)
         ]);
 
         User::create([
